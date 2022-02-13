@@ -208,7 +208,7 @@ AddEventHandler('siir_fishing:equipBait', function(bait)
                         if not cancel then
                             -- Do Something If Action Wasn't Cancelled
                             TriggerEvent('siir_fishing:castLine', fishingZone, distance)
-                            TriggerServerEvent('siir_fishing:removeItem')
+                            TriggerServerEvent('siir_fishing:removeItem', bait)
                             baitUsed = bait
                         else
                             -- Do Something If Action Was Cancelled
