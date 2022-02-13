@@ -17,7 +17,7 @@ local legalFishing = PolyZone:Create({
     name="legal_fishing",
     minZ=10.0,
     maxZ=40.0,
-    debugGrid=true,
+    debugGrid=false,
     gridDivisions=25
 })
 
@@ -32,7 +32,7 @@ local illegalFishing = PolyZone:Create({
     name="illegal_fishing",
     minZ=0.0,
     maxZ=50.0,
-    debugGrid=true,
+    debugGrid=false,
     gridDivisions=25
 })
 
