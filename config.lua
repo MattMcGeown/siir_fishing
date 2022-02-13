@@ -51,12 +51,5 @@ Config.IllegalFishing = {
             {catch = 'shark', minWeight = 8000, maxWeight = 10000, model = 'a_c_sharkhammer'},
             {catch = 'stingray', minWeight = 4000, maxWeight = 6000, model = 'a_c_stingray'},
         },
-        -- Bait type
-        -- premium_fish_bait = {
-        --     {catch = 'perch', minWeight = 1814, maxWeight = 2721, model = 'a_c_fish'},
-        --     {catch = 'bass', minWeight = 1850, maxWeight = 3000, model = 'a_c_fish'},
-        --     {catch = 'catfish', minWeight = 2000, maxWeight = 4000, model = 'a_c_fish'},
-        --     {catch = 'sturgeon', minWeight = 2500, maxWeight = 5500, model = 'a_c_fish'},
-        -- }
     }
 }
