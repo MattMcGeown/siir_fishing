@@ -28,8 +28,7 @@ AddEventHandler('siir_fishing:giveItem', function(bait, zone)
     local item = Config[zone].CatchItems[bait][itemSelect]
     local catchWeight = math.random(item.minWeight, item.maxWeight)
     TriggerClientEvent('siir_fishing:spawnModel', xPlayer.source, item.model)
-    
-    -- if inv:CanCarryItem(xPlayer.source, item, 1, {weight = catchWeight}) then
+
     if xPlayer.getWeight() + catchWeight <= xPlayer.getMaxWeight() then
         
         inv:AddItem(xPlayer.source, item.catch, 1, {weight = catchWeight})
