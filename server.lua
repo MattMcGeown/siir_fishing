@@ -11,12 +11,12 @@ ESX.RegisterServerCallback('siir_fishing:checkRod', function(source, cb, item)
 end)
 
 RegisterNetEvent('siir_fishing:removeItem')
-AddEventHandler('siir_fishing:removeItem', function()
+AddEventHandler('siir_fishing:removeItem', function(bait_used)
     local xPlayer = ESX.GetPlayerFromId(source)
 
-    local fish_bait = inv:GetItem(xPlayer.source, 'fish_bait')
+    local fish_bait = inv:GetItem(xPlayer.source, bait_used)
     if fish_bait.count > 0 then
-        inv:RemoveItem(xPlayer.source, 'fish_bait', 1)
+        inv:RemoveItem(xPlayer.source, bait_used, 1)
     end
 end)
 
